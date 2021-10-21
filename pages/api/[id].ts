@@ -13,8 +13,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const { pid } = req.query
-  console.log('pages/api/[id].js', req.query);
-const data = getUser(pid);
+  const data = getUser(pid);
 
   if (!data) {
     return res.status(500);

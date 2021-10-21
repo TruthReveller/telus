@@ -15,7 +15,6 @@ interface Params extends ParsedUrlQuery {
 }
 
 const UserProfile = (props:Props) => {
-  console.log(props);
   const {user} = props;
   const { id, email, first_name, last_name, avatar} = user;
 
